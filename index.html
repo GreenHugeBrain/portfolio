@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Giorgi Sibashvili — Web Design & Development</title>
+<meta name="description" content="Hand-coded websites for small businesses. No page builders, no templates. Design, build and deploy.">
+<style>
+  :root{
+    --bg:#f7f5f1; --card:#fff; --ink:#15140f; --mut:#6b675f;
+    --line:#e2ded6; --accent:#15140f;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{ --bg:#0f0e0c; --card:#171512; --ink:#f0ede6; --mut:#9a948a;
+           --line:#2a2723; --accent:#f0ede6; }
+  }
+  :root[data-theme="light"]{
+    --bg:#f7f5f1; --card:#fff; --ink:#15140f; --mut:#6b675f;
+    --line:#e2ded6; --accent:#15140f;
+  }
+  :root[data-theme="dark"]{
+    --bg:#0f0e0c; --card:#171512; --ink:#f0ede6; --mut:#9a948a;
+    --line:#2a2723; --accent:#f0ede6;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{margin:0;background:var(--bg);color:var(--ink);
+       font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Arial,sans-serif;
+       -webkit-font-smoothing:antialiased}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+
+  header{padding:76px 0 0}
+  .eyebrow{font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--mut)}
+  h1{font-size:clamp(30px,5.4vw,54px);line-height:1.06;letter-spacing:-.025em;
+     margin:18px 0 0;max-width:15ch;font-weight:600}
+  .lede{margin:22px 0 0;max-width:56ch;font-size:clamp(15px,2vw,18px);color:var(--mut)}
+  .facts{display:flex;flex-wrap:wrap;gap:10px;margin:30px 0 0}
+  .facts span{font-size:12.5px;letter-spacing:.02em;color:var(--mut);
+              border:1px solid var(--line);border-radius:100px;padding:6px 14px}
+
+  .divider{border:0;border-top:1px solid var(--line);margin:60px 0 0}
+  h2{font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--mut);
+     font-weight:600;margin:44px 0 24px}
+
+  .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:34px 30px}
+  @media(max-width:760px){ .grid{grid-template-columns:1fr;gap:30px} }
+
+  .item{display:block;text-decoration:none;color:inherit}
+  .thumb{position:relative;overflow:hidden;border:1px solid var(--line);
+         border-radius:6px;background:var(--card);aspect-ratio:1280/860}
+  .thumb img{width:100%;height:100%;object-fit:cover;object-position:top center;
+             display:block;transition:transform .5s cubic-bezier(.2,.7,.3,1)}
+  .item:hover .thumb img{transform:scale(1.028)}
+  .meta{display:flex;justify-content:space-between;align-items:baseline;
+        gap:14px;margin:14px 2px 0}
+  .name{font-weight:600;font-size:16.5px;letter-spacing:-.01em}
+  .kind{font-size:12px;color:var(--mut);text-align:right;white-space:nowrap}
+  .desc{margin:5px 2px 0;font-size:13.5px;color:var(--mut);line-height:1.5}
+
+  .note{border:1px solid var(--line);border-radius:6px;padding:20px 22px;
+        margin:34px 0 0;font-size:14px;color:var(--mut);background:var(--card);
+        max-width:74ch}
+  .note b{color:var(--ink);font-weight:600}
+
+  .how{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:6px}
+  @media(max-width:760px){ .how{grid-template-columns:1fr;gap:22px} }
+  .how h3{font-size:15px;margin:0 0 7px;font-weight:600;letter-spacing:-.01em}
+  .how p{margin:0;font-size:14px;color:var(--mut);line-height:1.6}
+
+  footer{margin:64px 0 0;border-top:1px solid var(--line);padding:34px 0 80px}
+  .contact{display:flex;flex-wrap:wrap;gap:12px;margin-top:20px}
+  .contact a{display:inline-block;padding:12px 20px;border:1px solid var(--accent);
+             border-radius:3px;text-decoration:none;color:var(--ink);font-size:14px}
+  .contact a:hover{background:var(--accent);color:var(--bg)}
+  .fine{margin-top:26px;font-size:12.5px;color:var(--mut)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="eyebrow">Giorgi Sibashvili · Tbilisi, Georgia</div>
+  <h1>Websites built by hand, not assembled from blocks.</h1>
+  <p class="lede">
+    I design and build sites for small businesses — studios, clinics, cafés,
+    salons. Written in HTML, CSS and JavaScript, so the files are yours and
+    nothing is locked to a platform.
+  </p>
+  <div class="facts">
+    <span>No page builders</span>
+    <span>No templates</span>
+    <span>Mobile-first</span>
+    <span>Live in 24 hours</span>
+    <span>Domain &amp; hosting handled</span>
+  </div>
+</header>
+
+<hr class="divider">
+
+<h2>Selected work</h2>
+
+<div class="grid">
+
+  <a class="item" href="https://greenhugebrain.github.io/indigo-cat-tattoo/" target="_blank" rel="noopener">
+    <div class="thumb"><img src="shots/indigo-cat-tattoo.png" alt="Indigo Cat tattoo studio site" loading="lazy"></div>
+    <div class="meta"><span class="name">Indigo Cat</span><span class="kind">Tattoo studio</span></div>
+    <p class="desc">Dark, cinematic five-page build with an artist roster, portfolio gallery and booking flow.</p>
+  </a>
+
+  <a class="item" href="https://greenhugebrain.github.io/ndma-studio/" target="_blank" rel="noopener">
+    <div class="thumb"><img src="shots/ndma-studio.png" alt="NDMA massage studio site" loading="lazy"></div>
+    <div class="meta"><span class="name">NDMA Studio</span><span class="kind">Massage &amp; wellness</span></div>
+    <p class="desc">Calm, low-contrast palette built around treatment menus and direct booking.</p>
+  </a>
+
+  <a class="item" href="https://greenhugebrain.github.io/aura-dental/" target="_blank" rel="noopener">
+    <div class="thumb"><img src="shots/aura-dental.png" alt="Aura dental clinic site" loading="lazy"></div>
+    <div class="meta"><span class="name">Aura Dental</span><span class="kind">Dental clinic</span></div>
+    <p class="desc">Clinical and reassuring — services, team profiles and an appointment request form.</p>
+  </a>
+
+  <a class="item" href="https://greenhugebrain.github.io/theyard-coffee-tbilisi/" target="_blank" rel="noopener">
+    <div class="thumb"><img src="shots/theyard-coffee-tbilisi.png" alt="The Yard coffee site" loading="lazy"></div>
+    <div class="meta"><span class="name">The Yard</span><span class="kind">Café</span></div>
+    <p class="desc">Editorial layout with a typeset menu, hours and location — built to be read on a phone.</p>
+  </a>
+
+  <a class="item" href="https://greenhugebrain.github.io/n-lines-clinic/" target="_blank" rel="noopener">
+    <div class="thumb"><img src="shots/n-lines-clinic.png" alt="N Lines skin clinic site" loading="lazy"></div>
+    <div class="meta"><span class="name">N Lines</span><span class="kind">Skin clinic</span></div>
+    <p class="desc">Treatment-led structure with pricing, before-and-after gallery and consultation booking.</p>
+  </a>
+
+  <a class="item" href="https://greenhugebrain.github.io/impress-beauty/" target="_blank" rel="noopener">
+    <div class="thumb"><img src="shots/impress-beauty.png" alt="Impress Beauty Club site" loading="lazy"></div>
+    <div class="meta"><span class="name">Impress Beauty Club</span><span class="kind">Beauty salon</span></div>
+    <p class="desc">Multi-service salon: hair, nails and makeup split into scannable sections.</p>
+  </a>
+
+  <a class="item" href="https://greenhugebrain.github.io/prime-thai-spa/" target="_blank" rel="noopener">
+    <div class="thumb"><img src="shots/prime-thai-spa.png" alt="Prime Thai Spa site" loading="lazy"></div>
+    <div class="meta"><span class="name">Prime Thai Spa</span><span class="kind">Spa</span></div>
+    <p class="desc">Warm, textural design with a full treatment menu and one-tap booking.</p>
+  </a>
+
+  <a class="item" href="https://greenhugebrain.github.io/maizen-matcha-tbilisi/" target="_blank" rel="noopener">
+    <div class="thumb"><img src="shots/maizen-matcha-tbilisi.png" alt="Maizen matcha bar site" loading="lazy"></div>
+    <div class="meta"><span class="name">Maizen</span><span class="kind">Matcha bar</span></div>
+    <p class="desc">Product-forward layout with a strong type hierarchy and a compact menu.</p>
+  </a>
+
+</div>
+
+<div class="note">
+  <b>About this work.</b> These are self-initiated builds for real local businesses —
+  concept sites I designed, built and deployed myself to work out how each type of
+  business should be presented online. They are not paid client engagements, and the
+  businesses shown have not commissioned them. Copy is in Georgian; I build in English
+  just as readily.
+</div>
+
+<hr class="divider">
+
+<h2>Also</h2>
+
+<div class="grid">
+  <a class="item" href="https://greenhugebrain.github.io/crossword-sample/" target="_blank" rel="noopener">
+    <div class="thumb"><img src="shots/crossword.png" alt="Newspaper-style crossword sample" loading="lazy"></div>
+    <div class="meta"><span class="name">Question Time</span><span class="kind">Print &amp; editorial</span></div>
+    <p class="desc">A newspaper-style crossword, generated from code — true rotational symmetry,
+      exact numbering, print-ready PDF at two sizes.</p>
+  </a>
+</div>
+
+<hr class="divider">
+
+<h2>How I work</h2>
+
+<div class="how">
+  <div>
+    <h3>I build it first</h3>
+    <p>You see a finished site before any money changes hands. If it isn't right,
+       you owe nothing.</p>
+  </div>
+  <div>
+    <h3>You own the files</h3>
+    <p>Plain HTML, CSS and JavaScript. No subscription, no builder account, no
+       platform holding your site hostage.</p>
+  </div>
+  <div>
+    <h3>Revisions are fast</h3>
+    <p>Because it's code rather than a drag-and-drop canvas, changes take minutes
+       and nothing else shifts.</p>
+  </div>
+</div>
+
+<footer>
+  <div class="eyebrow">Get in touch</div>
+  <div class="contact">
+    <a href="mailto:khvtisozedelashvili@gmail.com">khvtisozedelashvili@gmail.com</a>
+    <a href="https://codesmyth.dev" target="_blank" rel="noopener">codesmyth.dev</a>
+    <a href="https://github.com/GreenHugeBrain" target="_blank" rel="noopener">GitHub</a>
+  </div>
+  <p class="fine">Send me your current site or your Instagram and I'll come back with
+     what I'd change — no charge, no obligation.</p>
+</footer>
+
+</div>
+</body>
+</html>
